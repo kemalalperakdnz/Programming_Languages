@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="tr">
+<html>
+
+<head>
+  <title>ANASAYFA</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="images/logom.png" />
+ 
+  <style>
+  html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  body {
+    background-color: #8870B9;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .arkaplan {
+    position: absolute;
+    display: table;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 34px;
+  }
+
+  #zaman {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+    overflow:hidden;
+  }
+
+  .navbar {
+    width: 62%;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(7, 7, 7, 1.5);
+    opacity: 0.1;
+    filter: alpha(opacity=40);
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+  }
+
+  .navbar:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=40);
+  }
+
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+  }
+
+  .name {
+    width: 50%;
+    position: absolute;
+    top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  a:hover {
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.2);
+  }
+
+  .masaustu {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="arkaplan">
+      <iframe id="masaustu" src="images/applearkaplan.png" height="414" width="1100"></iframe>
+      <div id="zaman"></div>
+
+      <div class="navbar">
+        <a onclick="srcDegistir('python.html')"><br /> <input type="image" src="images/python.png"
+            style="width: 30px; height: 30px" /><br /></a>
+        <a onclick="srcDegistir('java.html')"><br /> <input type="image" src="images/javalogosu1.png"
+            style="width: 30px; height: 30px" /><br /></a>
+        <a onclick="srcDegistir('javaScript.html')"><br /> <input type="image" src="images/javascript.png"
+            style="width: 30px; height: 30px" /><br /></a>
+        <a onclick="srcDegistir('c++.html')"><br /> <input type="image" src="images/cplusplus.png"
+            style="width: 30px; height: 30px" /><br /></a>
+        <a onclick="srcDegistir('csharp.html')"><br /> <input type="image" src="images/csharp.png"
+            style="width: 30px; height: 30px" /><br /></a>
+        <a onclick="srcDegistir('c.html')"><br /> <input type="image" src="images/c.png" style="width: 30px; height: 30px" /><br /></a>
+        <a onclick="srcDegistir('typeScript.html')"><br /> <input type="image" src="images/typescript.png"
+            style="width: 30px; height: 30px" /><br /></a>
+        <a onclick="srcDegistir('php.html')"><br /> <input type="image" src="images/php.png" style="width: 30px; height: 30px" /><br /></a>
+        <a onclick="srcDegistir('perl.html')"><br /> <input type="image" src="images/perl.png"
+            style="width: 30px; height: 30px" /><br /></a>
+        <a onclick="srcDegistir('ruby.html')"><br /> <input type="image" src="images/ruby.png"
+            style="width: 30px; height: 30px" /><br /></a>
+        <a onclick="srcDegistir('profil.html')"><br /> <input type="image" src="images/profil.png"
+            style="width: 30px; height: 30px" /><br /></a>
+      </div>
+
+      <div class="name">
+        <marquee behavior="alternate" direction="up" width="80%">
+          <marquee direction="left">ALTBARDAN SEÇİNİZ...</marquee>
+        </marquee></a>
+      </div>
+
+    </div>
+    <img class="masaustu" src="images/applemasaustu.png" width="1200" height="700" />
+  </div>
+  <canvas id="example" width="600" height="450"></canvas>
+  <script>
+    function tarihSaat() {
+      var date = new Date().toLocaleString('tr-TR');
+      document.getElementById("zaman").innerHTML = date;
+    }
+    setInterval(tarihSaat, 1000); window.addEventListener('contextmenu', function (e) { e.preventDefault(); }, false)
+
+    function srcDegistir(src) {
+      document.getElementById('masaustu').src = src;
+      document.getElementsByClassName('name')[0].style.visibility = 'hidden';
+    }
+  </script>
+</body>
+
+</html>

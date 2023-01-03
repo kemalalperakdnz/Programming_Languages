@@ -1,0 +1,131 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: "Open Sans", sans-serif;
+			box-sizing: border-box;
+			text-decoration: none;
+		}
+
+		body {
+			background: #8870B9;
+			background-size: cover;
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.profile-card {
+			width: 420px;
+			overflow: hidden;
+			text-align: center;
+			position: relative;
+			box-shadow: 0 0 10px #00000070;
+		}
+
+		.top-section {
+			padding: 60px 40px;
+			background: #368ee0;
+		}
+
+		.pic {
+			width: 150px;
+			height: 150px;
+			margin: auto;
+			margin-bottom: 20px;
+			border: 2px solid #2c3e50;
+			border-radius: 50%;
+			padding: 8px;
+			position: relative;
+		}
+
+		.pic:after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			border: 1px solid #2c3e50;
+			left: 0;
+			top: 0;
+			box-sizing: border-box;
+			border-radius: 50%;
+			animation: wave 1.5s infinite linear;
+		}
+
+		@keyframes wave {
+			to {
+				transform: scale(1.5);
+				opacity: 0;
+			}
+		}
+
+		.pic img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+
+		.tag a {
+			font-size: 20px;
+			color: black;
+			font-weight: bold;
+		}
+
+		.border {
+			width: 1px;
+			height: 20px;
+			background: #bbb;
+			margin: 0 30px;
+		}
+
+		.logo {
+			font-size: 25px;
+			font-weight: bold;
+
+		}
+		.zamanyeri {
+			margin-top: -525px;
+			position: absolute;
+			left: 13px;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="zamanyeri">
+	<input type="button" value="<< Geri Dön" onClick="javascript:history.go(-1)" />
+	</div>
+	<div class="profile-card">
+		<div class="top-section">
+			<i class="message fas fa-envelope"></i>
+			<i class="notif fas fa-bell"></i>
+			<div class="pic">
+				<img src="images/IMG_1061.JPG" alt="resimim">
+			</div>
+			<div class="logo">
+				<marquee behavior="alternate" direction="up" width="80%">
+					<marquee direction="right"> Kemal Alper AKDENİZ</marquee>
+				</marquee></a>
+			</div><br>
+			<div class="tag">
+				<a
+					href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFrJZcRlSMtJfLBpbpmJMksgnlhRPQcVlRbnkwGMvHCPbnZdwcPccWTWnMhqJtWMXdgVrQ">alperkemalakdeniz@gmail.com</a>
+			</div><br>
+			<h1>CONTACT:</h1>
+			<div class="aplication">
+				<a href="https://github.com/kemalalperakdnz/kemalalperakdeniz.git"><br /> <input type="image"
+						src="images/github_PNG47.png" style="width: 30px; height: 30px" /><br /></a>
+				<a href="https://www.instagram.com/k.alperakdeniz/"><br /> <input type="image"
+						src="images/instagram_PNG9.png" style="width: 30px; height: 30px" /><br /></a>
+				<a href="https://www.linkedin.com/in/kemal-alper-akdeniz-00955718b/"><br /> <input type="image"
+						src="images/linkedIn_PNG1.png" style="width: 30px; height: 30px" /><br /></a>
+			</div>
+</body>
+
+</html>
